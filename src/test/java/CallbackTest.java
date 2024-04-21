@@ -1,14 +1,15 @@
 
+import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-import com.codeborne.selenide.Condition;
 
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
+
 
 public class CallbackTest {
 
@@ -17,7 +18,7 @@ public class CallbackTest {
     }
 
     @Test
-    public void shouldTest() {
+    public void shouldTest1() {
         open("http://localhost:9999");
         $("[data-test-id='city'] input").setValue("Рязань");
         String planningDate = generateDate(4, "dd.MM.yyyy");

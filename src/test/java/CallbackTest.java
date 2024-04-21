@@ -1,13 +1,10 @@
-package ru.netology.web;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
 
-import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import com.codeborne.selenide.Condition;
 
 import java.time.Duration;
 import java.time.LocalDate;
